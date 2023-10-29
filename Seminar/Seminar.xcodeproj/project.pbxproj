@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A414CDA22AECCB1700182C40 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDA12AECCB1700182C40 /* ItemListViewController.swift */; };
+		A414CDA52AECCF6700182C40 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A414CDA42AECCF6700182C40 /* SnapKit */; };
+		A414CDA82AECD01200182C40 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A414CDA72AECD01200182C40 /* Then */; };
+		A414CDAA2AECD98C00182C40 /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDA92AECD98C00182C40 /* ItemListTableViewCell.swift */; };
+		A414CDAC2AECE14700182C40 /* ItemListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDAB2AECE14700182C40 /* ItemListData.swift */; };
+		A414CDB02AECEF7800182C40 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDAF2AECEF7800182C40 /* ImageViewController.swift */; };
+		A414CDB22AECEFEC00182C40 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDB12AECEFEC00182C40 /* ImageCollectionViewCell.swift */; };
+		A414CDB42AECF24800182C40 /* ImageCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDB32AECF24800182C40 /* ImageCollectionData.swift */; };
 		A4BC6FC52AD12A5F00E54675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BC6FC42AD12A5F00E54675 /* AppDelegate.swift */; };
 		A4BC6FC72AD12A5F00E54675 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BC6FC62AD12A5F00E54675 /* SceneDelegate.swift */; };
 		A4BC6FCC2AD12A5F00E54675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BC6FCA2AD12A5F00E54675 /* Main.storyboard */; };
@@ -18,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A414CDA12AECCB1700182C40 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		A414CDA92AECD98C00182C40 /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
+		A414CDAB2AECE14700182C40 /* ItemListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListData.swift; sourceTree = "<group>"; };
+		A414CDAF2AECEF7800182C40 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		A414CDB12AECEFEC00182C40 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		A414CDB32AECF24800182C40 /* ImageCollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionData.swift; sourceTree = "<group>"; };
 		A4BC6FC12AD12A5F00E54675 /* Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BC6FC42AD12A5F00E54675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4BC6FC62AD12A5F00E54675 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +49,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A414CDA52AECCF6700182C40 /* SnapKit in Frameworks */,
+				A414CDA82AECD01200182C40 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A414CD942AECC78400182C40 /* Seminar3 */ = {
+			isa = PBXGroup;
+			children = (
+				A414CDAD2AECEF0200182C40 /* ItemList */,
+				A414CDAE2AECEF0B00182C40 /* ImageCollection */,
+			);
+			path = Seminar3;
+			sourceTree = "<group>";
+		};
+		A414CDAD2AECEF0200182C40 /* ItemList */ = {
+			isa = PBXGroup;
+			children = (
+				A414CDAB2AECE14700182C40 /* ItemListData.swift */,
+				A414CDA92AECD98C00182C40 /* ItemListTableViewCell.swift */,
+				A414CDA12AECCB1700182C40 /* ItemListViewController.swift */,
+			);
+			path = ItemList;
+			sourceTree = "<group>";
+		};
+		A414CDAE2AECEF0B00182C40 /* ImageCollection */ = {
+			isa = PBXGroup;
+			children = (
+				A414CDB32AECF24800182C40 /* ImageCollectionData.swift */,
+				A414CDB12AECEFEC00182C40 /* ImageCollectionViewCell.swift */,
+				A414CDAF2AECEF7800182C40 /* ImageViewController.swift */,
+			);
+			path = ImageCollection;
+			sourceTree = "<group>";
+		};
 		A4BC6FB82AD12A5F00E54675 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +108,7 @@
 				A4BC6FD82AD12B4700E54675 /* Application */,
 				A4BC6FD92AD12B5200E54675 /* Global */,
 				A4BC6FE32AD44BBB00E54675 /* Seminar1 */,
+				A414CD942AECC78400182C40 /* Seminar3 */,
 				A4BC6FD22AD12A6100E54675 /* Info.plist */,
 			);
 			path = Seminar;
@@ -113,6 +159,10 @@
 			dependencies = (
 			);
 			name = Seminar;
+			packageProductDependencies = (
+				A414CDA42AECCF6700182C40 /* SnapKit */,
+				A414CDA72AECD01200182C40 /* Then */,
+			);
 			productName = Seminar;
 			productReference = A4BC6FC12AD12A5F00E54675 /* Seminar.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +191,10 @@
 				Base,
 			);
 			mainGroup = A4BC6FB82AD12A5F00E54675;
+			packageReferences = (
+				A414CDA32AECCF6700182C40 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A414CDA62AECD01200182C40 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = A4BC6FC22AD12A5F00E54675 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,10 +223,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4BC6FE02AD1389B00E54675 /* FirstViewController.swift in Sources */,
+				A414CDB42AECF24800182C40 /* ImageCollectionData.swift in Sources */,
+				A414CDAA2AECD98C00182C40 /* ItemListTableViewCell.swift in Sources */,
 				A4BC6FC52AD12A5F00E54675 /* AppDelegate.swift in Sources */,
+				A414CDA22AECCB1700182C40 /* ItemListViewController.swift in Sources */,
 				A4BC6FC72AD12A5F00E54675 /* SceneDelegate.swift in Sources */,
 				A4BC6FE22AD1411B00E54675 /* GetDataProtocol.swift in Sources */,
 				A4BC6FDC2AD135F600E54675 /* ResultViewController.swift in Sources */,
+				A414CDB02AECEF7800182C40 /* ImageViewController.swift in Sources */,
+				A414CDB22AECEFEC00182C40 /* ImageCollectionViewCell.swift in Sources */,
+				A414CDAC2AECE14700182C40 /* ItemListData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +450,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A414CDA32AECCF6700182C40 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A414CDA62AECD01200182C40 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A414CDA42AECCF6700182C40 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A414CDA32AECCF6700182C40 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A414CDA72AECD01200182C40 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A414CDA62AECD01200182C40 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4BC6FB92AD12A5F00E54675 /* Project object */;
 }
