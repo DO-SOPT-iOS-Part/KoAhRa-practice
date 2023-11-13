@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  Seminar
+//
+//  Created by 고아라 on 2023/11/11.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = http:/$()/3.39.54.196
