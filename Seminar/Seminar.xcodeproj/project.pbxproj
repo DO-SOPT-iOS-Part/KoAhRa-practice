@@ -15,6 +15,16 @@
 		A414CDB02AECEF7800182C40 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDAF2AECEF7800182C40 /* ImageViewController.swift */; };
 		A414CDB22AECEFEC00182C40 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDB12AECEFEC00182C40 /* ImageCollectionViewCell.swift */; };
 		A414CDB42AECF24800182C40 /* ImageCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414CDB32AECF24800182C40 /* ImageCollectionData.swift */; };
+		A461B5402AFF57F10049A0F3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B53F2AFF57F10049A0F3 /* RegisterViewController.swift */; };
+		A461B5422AFF58200049A0F3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B5412AFF58200049A0F3 /* NetworkError.swift */; };
+		A461B5442AFF582F0049A0F3 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B5432AFF582F0049A0F3 /* RegisterService.swift */; };
+		A461B5462AFF58430049A0F3 /* RegisterRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B5452AFF58430049A0F3 /* RegisterRequestBody.swift */; };
+		A461B5482AFF588E0049A0F3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B5472AFF588E0049A0F3 /* InfoViewController.swift */; };
+		A461B54A2AFF58A60049A0F3 /* GetInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B5492AFF58A60049A0F3 /* GetInfoService.swift */; };
+		A461B54C2AFF58B30049A0F3 /* UserInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B54B2AFF58B30049A0F3 /* UserInfoDataModel.swift */; };
+		A461B54E2AFF65590049A0F3 /* CheckDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B54D2AFF65590049A0F3 /* CheckDataModel.swift */; };
+		A461B5502AFF65BE0049A0F3 /* CheckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B54F2AFF65BE0049A0F3 /* CheckService.swift */; };
+		A461B5582AFF909B0049A0F3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461B5572AFF909B0049A0F3 /* Config.swift */; };
 		A4BC6FC52AD12A5F00E54675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BC6FC42AD12A5F00E54675 /* AppDelegate.swift */; };
 		A4BC6FC72AD12A5F00E54675 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BC6FC62AD12A5F00E54675 /* SceneDelegate.swift */; };
 		A4BC6FCC2AD12A5F00E54675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BC6FCA2AD12A5F00E54675 /* Main.storyboard */; };
@@ -32,6 +42,17 @@
 		A414CDAF2AECEF7800182C40 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		A414CDB12AECEFEC00182C40 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		A414CDB32AECF24800182C40 /* ImageCollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionData.swift; sourceTree = "<group>"; };
+		A461B53F2AFF57F10049A0F3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A461B5412AFF58200049A0F3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A461B5432AFF582F0049A0F3 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		A461B5452AFF58430049A0F3 /* RegisterRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestBody.swift; sourceTree = "<group>"; };
+		A461B5472AFF588E0049A0F3 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A461B5492AFF58A60049A0F3 /* GetInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoService.swift; sourceTree = "<group>"; };
+		A461B54B2AFF58B30049A0F3 /* UserInfoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDataModel.swift; sourceTree = "<group>"; };
+		A461B54D2AFF65590049A0F3 /* CheckDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDataModel.swift; sourceTree = "<group>"; };
+		A461B54F2AFF65BE0049A0F3 /* CheckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckService.swift; sourceTree = "<group>"; };
+		A461B5572AFF909B0049A0F3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A461B5592AFF90F30049A0F3 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = Seminar/Seminar4/Config.xcconfig; sourceTree = "<group>"; };
 		A4BC6FC12AD12A5F00E54675 /* Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BC6FC42AD12A5F00E54675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4BC6FC62AD12A5F00E54675 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,9 +107,59 @@
 			path = ImageCollection;
 			sourceTree = "<group>";
 		};
+		A461B53E2AFF57DB0049A0F3 /* Seminar4 */ = {
+			isa = PBXGroup;
+			children = (
+				A461B5542AFF90330049A0F3 /* Base */,
+				A461B5512AFF8CBB0049A0F3 /* Model */,
+				A461B5532AFF8CC90049A0F3 /* Service */,
+				A461B5522AFF8CC20049A0F3 /* ViewController */,
+			);
+			path = Seminar4;
+			sourceTree = "<group>";
+		};
+		A461B5512AFF8CBB0049A0F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A461B54B2AFF58B30049A0F3 /* UserInfoDataModel.swift */,
+				A461B54D2AFF65590049A0F3 /* CheckDataModel.swift */,
+				A461B5452AFF58430049A0F3 /* RegisterRequestBody.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A461B5522AFF8CC20049A0F3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A461B53F2AFF57F10049A0F3 /* RegisterViewController.swift */,
+				A461B5472AFF588E0049A0F3 /* InfoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A461B5532AFF8CC90049A0F3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A461B5432AFF582F0049A0F3 /* RegisterService.swift */,
+				A461B54F2AFF65BE0049A0F3 /* CheckService.swift */,
+				A461B5492AFF58A60049A0F3 /* GetInfoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A461B5542AFF90330049A0F3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A461B5412AFF58200049A0F3 /* NetworkError.swift */,
+				A461B5572AFF909B0049A0F3 /* Config.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		A4BC6FB82AD12A5F00E54675 = {
 			isa = PBXGroup;
 			children = (
+				A461B5592AFF90F30049A0F3 /* Config.xcconfig */,
 				A4BC6FC32AD12A5F00E54675 /* Seminar */,
 				A4BC6FC22AD12A5F00E54675 /* Products */,
 			);
@@ -109,6 +180,7 @@
 				A4BC6FD92AD12B5200E54675 /* Global */,
 				A4BC6FE32AD44BBB00E54675 /* Seminar1 */,
 				A414CD942AECC78400182C40 /* Seminar3 */,
+				A461B53E2AFF57DB0049A0F3 /* Seminar4 */,
 				A4BC6FD22AD12A6100E54675 /* Info.plist */,
 			);
 			path = Seminar;
@@ -222,8 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A461B5502AFF65BE0049A0F3 /* CheckService.swift in Sources */,
+				A461B54E2AFF65590049A0F3 /* CheckDataModel.swift in Sources */,
+				A461B5402AFF57F10049A0F3 /* RegisterViewController.swift in Sources */,
 				A4BC6FE02AD1389B00E54675 /* FirstViewController.swift in Sources */,
+				A461B54A2AFF58A60049A0F3 /* GetInfoService.swift in Sources */,
 				A414CDB42AECF24800182C40 /* ImageCollectionData.swift in Sources */,
+				A461B54C2AFF58B30049A0F3 /* UserInfoDataModel.swift in Sources */,
 				A414CDAA2AECD98C00182C40 /* ItemListTableViewCell.swift in Sources */,
 				A4BC6FC52AD12A5F00E54675 /* AppDelegate.swift in Sources */,
 				A414CDA22AECCB1700182C40 /* ItemListViewController.swift in Sources */,
@@ -231,7 +308,12 @@
 				A4BC6FE22AD1411B00E54675 /* GetDataProtocol.swift in Sources */,
 				A4BC6FDC2AD135F600E54675 /* ResultViewController.swift in Sources */,
 				A414CDB02AECEF7800182C40 /* ImageViewController.swift in Sources */,
+				A461B5422AFF58200049A0F3 /* NetworkError.swift in Sources */,
+				A461B5582AFF909B0049A0F3 /* Config.swift in Sources */,
+				A461B5462AFF58430049A0F3 /* RegisterRequestBody.swift in Sources */,
 				A414CDB22AECEFEC00182C40 /* ImageCollectionViewCell.swift in Sources */,
+				A461B5442AFF582F0049A0F3 /* RegisterService.swift in Sources */,
+				A461B5482AFF588E0049A0F3 /* InfoViewController.swift in Sources */,
 				A414CDAC2AECE14700182C40 /* ItemListData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +342,7 @@
 /* Begin XCBuildConfiguration section */
 		A4BC6FD32AD12A6100E54675 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A461B5592AFF90F30049A0F3 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -320,6 +403,7 @@
 		};
 		A4BC6FD42AD12A6100E54675 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A461B5592AFF90F30049A0F3 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
