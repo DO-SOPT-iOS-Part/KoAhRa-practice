@@ -128,7 +128,8 @@ private extension RegisterViewController {
     func registerButtonTap() {
         Task {
             do {
-                let status = try await RegisterService.shared.PostRegisterData(usreName: self.userName, password: self.password, nickName: self.nickName)
+                let status = try await RegisterService.shared.PostRegisterData(userName: self.userName, password: self.password, nickName: self.nickName)
+                let checkExist = try await CheckService.shared.PostCheck(username: idTextField.text ?? "")
                 if status == 201 {
                     let alert = UIAlertController(title: "계정생성 성공", message: "와하하", preferredStyle: UIAlertController.Style.alert)
                     let okAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
@@ -138,6 +139,7 @@ private extension RegisterViewController {
                     let alert = UIAlertController(title: "계정생성 실패", message: "흑흑", preferredStyle: UIAlertController.Style.alert)
                     let okAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
                     alert.addAction(okAction)
+                    print(checkExist?.isExist ?? "")
                     self.present(alert, animated: true)
                 }
             } catch {
