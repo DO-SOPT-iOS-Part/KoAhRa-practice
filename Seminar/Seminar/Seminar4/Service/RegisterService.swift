@@ -7,15 +7,18 @@
 
 import Foundation
 
-class RegisterService {
+class RegisterService: BaseService {
     static let shared = RegisterService()
-    private init() {}
     
-    func makeRequestBody(usreName: String,
+    private override init() {
+        super.init()
+    }
+    
+    func makeRequestBody(userName: String,
                          password: String,
                          nickName: String) -> Data? {
         do {
-            let data = RegisterRequestBody(username: usreName,
+            let data = RegisterRequestBody(username: userName,
                                            password: password,
                                            nickname: nickName)
             let jsonEncoder = JSONEncoder()
@@ -28,46 +31,20 @@ class RegisterService {
     }
     
     func makeRequest(body: Data?) -> URLRequest {
-        let url = URL(string: Config.baseURL + "/api/v1/members")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        let header = ["Content-Type": "application/json"]
-        header.forEach {
-            request.addValue($0.value, forHTTPHeaderField: $0.key)
-        }
-        if let body = body {
-            request.httpBody = body
-        }
-        
-        return request
+        let urlString = Config.baseURL + "/api/v1/members"
+        return RegisterService.makePostRequest(urlString: urlString, body: body)
     }
     
-    func PostRegisterData(usreName: String,
-                          password: String,
-                          nickName: String) async throws -> Int {
+    func PostRegisterData(userName: String, password: String, nickName: String) async throws -> Int {
         do {
-            guard let body = makeRequestBody(usreName: usreName,
+            let urlString = Config.baseURL + "/api/v1/members"
+            guard let body = makeRequestBody(userName: userName,
                                              password: password,
                                              nickName: nickName)
             else { throw NetworkError.requstEncodingError }
-            
-            let request = self.makeRequest(body: body)
-            let (_, response) = try await URLSession.shared.data(for: request)
-            dump(request)
-            guard let httpResponse = response as? HTTPURLResponse else {
-                throw NetworkError.responseError
-            }
-            dump(response)
-            return httpResponse.statusCode
+            return try await RegisterService.postData(urlString: urlString, body: body)
         } catch {
             throw error
         }
-        
     }
-    
-    private func configureHTTPError(errorCode: Int) -> Error {
-        return NetworkError(rawValue: errorCode)
-        ?? NetworkError.unknownError
-    }
-    
 }
